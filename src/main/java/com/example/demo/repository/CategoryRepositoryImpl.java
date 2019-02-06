@@ -38,6 +38,7 @@ public class CategoryRepositoryImpl implements CategoryRepositoryCustom {
         //return project("_id", "name", "image");
         return match(priceCriteria);
     }
+	//Lookup functionality working
     LookupOperation lookupOperation = LookupOperation.newLookup()
     	    .from("catalog")
     	    .localField("catalog_id")
